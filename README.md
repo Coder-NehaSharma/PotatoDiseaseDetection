@@ -13,7 +13,9 @@ The deep learning model utilizes a convolutional neural network (CNN) architectu
 Requirements
 
 Python 3.x
+
 TensorFlow
+
 Keras
 
 Results
