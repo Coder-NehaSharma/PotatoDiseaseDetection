@@ -1,3 +1,5 @@
+POTATODISEASEDETECTION
+
 This project aims to detect potato diseases using deep learning techniques. The model is capable of categorizing potato plants into three classes: early blight, late blight, and healthy.
 
 Dataset
