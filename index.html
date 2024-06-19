@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potato Disease Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(225, 225, 218);
+    margin: 0;
+    padding: 0;
+    color: rgb(10, 10, 9);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(55, 21, 21);
+    padding: 20px;
+    position: relative;
+    height: 100px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.logo {
+    max-width: 100px;
+    position: absolute;
+    left: 20px;
+}
+
+.header-title {
+    font-size: 40px;
+    color: white;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+.circle {
+    border: 6px dashed rgb(109, 26, 26);
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circle:before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
+    border: 5px dotted rgb(101, 23, 23);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.description {
+    margin-bottom: 20px;
+    color: rgb(89, 30, 30);
+}
+
+.upload-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-section input {
+    margin-bottom: 10px;
+}
+
+.upload-section button {
+    background-color: rgb(138, 59, 59);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.upload-section button:hover {
+    background-color: rgb(68, 21, 21);
+}
+
+.results {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.results .detected, .results .precaution {
+    width: 40%;
+}
+
+.results h2 {
+    color: rgb(163, 62, 62);
+}
+
+footer {
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: rgb(118, 37, 37);
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+</style>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="logo.png" alt="Logo" class="logo"> <!-- Replace with your logo -->
+            <span class="header-title">Smart Plant Health Detection System</span>
+        </div>
+    </header>
+    <main>
+        <div class="circle">
+            <p class="description">(Currently for potato only)</p>
+            <div class="upload-section">
+                <input type="file" id="imageUpload" accept="image/*">
+                <button onclick="predict()">Predict</button>
+            </div>
+        </div>
+        <div class="results">
+            <div class="detected">
+                <h2>Detected</h2>
+                <p id="detectedResult"></p>
+            </div>
+            <div class="precaution">
+                <h2>Precaution</h2>
+                <p id="precautionResult"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- <div class="footer-content">
+            <a href="https://github.com/your-github" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
+        </div> -->
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
