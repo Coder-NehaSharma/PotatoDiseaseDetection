@@ -51,6 +51,10 @@ cd potatodisease</code></pre>
 <p>3. Push to the branch (git push origin feature-branch).</p>
 <p>4. Create a new Pull Request.</p>
 
+<h2>Poster</h2>
+![Poster](https://github.com/Coder-NehaSharma/PotatoDiseaseDetection/assets/162179642/8bb5a305-bf48-4a6a-9c28-97e00689bdb3)
+
+
 <h2>Contact</h2>
 <p>For questions or suggestions, please contact:</p>
 <p>- GitHub:(https://github.com/Coder-NehaSharma)</p>
